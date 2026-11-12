@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SLR LUXURY WEDDINGS | Wedding Car Hire in Sri Lanka</title>
+<meta name="description" content="SLR Luxury Weddings - premium wedding car hire in Sri Lanka. Luxury sedans, vintage cars, SUVs and limousines for your special day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo">SLR <span>LUXURY WEDDINGS</span></a>
+  <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+  <nav id="menu">
+    <a href="#fleet">Our Fleet</a>
+    <a href="#packages">Packages</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#faq">FAQ</a>
+    <a href="#book" class="btn btn-gold small">Book Now</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <p class="eyebrow">Premium Wedding Car Hire • Sri Lanka</p>
+    <h1>Arrive in Style on <em>Your Big Day</em></h1>
+    <p class="sub">Luxury sedans, classic vintage cars, SUVs and limousines — beautifully decorated and driven by professional chauffeurs.</p>
+    <div class="hero-cta">
+      <a href="#fleet" class="btn btn-gold">View Our Fleet</a>
+      <a href="#book" class="btn btn-outline">Check Availability</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div><strong data-count="500">0</strong><span>Weddings Served</span></div>
+  <div><strong data-count="25">0</strong><span>Luxury Vehicles</span></div>
+  <div><strong data-count="8">0</strong><span>Years Experience</span></div>
+  <div><strong data-count="100">0</strong><span>% Happy Couples</span></div>
+</section>
+
+<section class="section" id="fleet">
+  <h2 class="title">Our Wedding Fleet</h2>
+  <p class="lead">Choose the perfect ride. Prices shown are starting prices per wedding day (up to 8 hours).</p>
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="fleetGrid"></div>
+</section>
+
+<section class="section alt" id="packages">
+  <h2 class="title">Wedding Packages</h2>
+  <p class="lead">Simple packages for every budget. Everything can be customised.</p>
+  <div class="packages" id="pkgGrid"></div>
+</section>
+
+<section class="section" id="why">
+  <h2 class="title">Why Choose SLR Luxury Weddings</h2>
+  <div class="features">
+    <div class="feature"><span>🚘</span><h3>Immaculate Cars</h3><p>Every vehicle is detailed and inspected before your event.</p></div>
+    <div class="feature"><span>💐</span><h3>Free Decorations</h3><p>Fresh flower and ribbon decorations in your wedding theme.</p></div>
+    <div class="feature"><span>🤵</span><h3>Professional Chauffeurs</h3><p>Uniformed, punctual and experienced wedding drivers.</p></div>
+    <div class="feature"><span>⏰</span><h3>On-Time Guarantee</h3><p>Your timeline is our priority, from home to venue.</p></div>
+    <div class="feature"><span>💰</span><h3>Transparent Pricing</h3><p>No hidden charges. Clear quotes on WhatsApp.</p></div>
+    <div class="feature"><span>📍</span><h3>Island-Wide Service</h3><p>Colombo, Kandy, Galle, Negombo and everywhere in between.</p></div>
+  </div>
+</section>
+
+<section class="section alt" id="gallery">
+  <h2 class="title">Wedding Gallery</h2>
+  <p class="lead">A glimpse of the moments we have been part of.</p>
+  <div class="gallery" id="galleryGrid"></div>
+</section>
+
+<section class="section" id="about">
+  <div class="about">
+    <div>
+      <h2 class="title left">About Us</h2>
+      <p>SLR Luxury Weddings is a Sri Lankan wedding car hire service dedicated to making your arrival unforgettable. From classic vintage beauties to the latest luxury sedans, we provide elegant vehicles, trained chauffeurs and attention to every detail.</p>
+      <p>Whether it is a small family ceremony or a grand hotel wedding, our team makes sure your transport is smooth, stylish and stress-free.</p>
+      <a href="#book" class="btn btn-gold">Get a Free Quote</a>
+    </div>
+    <div class="about-img" id="aboutImg">Add your photo<br>images/about.jpg</div>
+  </div>
+</section>
+
+<section class="section alt" id="reviews">
+  <h2 class="title">What Our Couples Say</h2>
+  <div class="reviews" id="reviewGrid"></div>
+</section>
+
+<section class="section" id="book">
+  <h2 class="title">Check Availability &amp; Book</h2>
+  <p class="lead">Fill in the details and your enquiry will open directly in WhatsApp — we reply quickly!</p>
+  <form class="form" id="bookForm" novalidate>
+    <div class="row">
+      <label>Your Name*<input type="text" id="fName" required placeholder="e.g. Nimal Perera"></label>
+      <label>Phone Number*<input type="tel" id="fPhone" required placeholder="e.g. 0771234567"></label>
+    </div>
+    <div class="row">
+      <label>Wedding Date*<input type="date" id="fDate" required></label>
+      <label>Pick-up Time<input type="time" id="fTime"></label>
+    </div>
+    <div class="row">
+      <label>Vehicle*<select id="fCar" required></select></label>
+      <label>Pick-up Location*<input type="text" id="fPickup" required placeholder="e.g. Nugegoda"></label>
+    </div>
+    <div class="row">
+      <label>Wedding Venue*<input type="text" id="fVenue" required placeholder="e.g. Galadari Hotel, Colombo"></label>
+      <label>Package
+        <select id="fPkg"></select>
+      </label>
+    </div>
+    <label>Additional Notes<textarea id="fNote" rows="3" placeholder="Decoration colours, extra cars, special requests..."></textarea></label>
+    <p class="err" id="formErr"></p>
+    <button type="submit" class="btn btn-wa">Send Enquiry via WhatsApp</button>
+  </form>
+</section>
+
+<section class="section alt" id="faq">
+  <h2 class="title">Frequently Asked Questions</h2>
+  <div class="faq" id="faqList"></div>
+</section>
+
+<section class="section" id="contact">
+  <h2 class="title">Contact Us</h2>
+  <div class="contact">
+    <div class="contact-card"><span>📞</span><h3>Call / WhatsApp</h3><p id="cPhone"></p></div>
+    <div class="contact-card"><span>✉️</span><h3>Email</h3><p id="cMail"></p></div>
+    <div class="contact-card"><span>📍</span><h3>Location</h3><p id="cAddr"></p></div>
+    <div class="contact-card"><span>🕘</span><h3>Open Hours</h3><p>Daily 8:00 AM – 9:00 PM</p></div>
+  </div>
+  <div class="social" id="social"></div>
+</section>
+
+<footer class="footer">
+  <p class="logo">SLR <span>LUXURY WEDDINGS</span></p>
+  <p>&copy; <span id="yr"></span> SLR Luxury Weddings. All rights reserved.</p>
+</footer>
+
+<!-- Vehicle details modal -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-box">
+    <button class="modal-x" id="modalX" aria-label="Close">&times;</button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<a href="#" class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.4.7 4.6 1.9 6.5L4 29l7.8-2c1.8 1 3.9 1.5 6.1 1.5 6.6 0 12-5.3 12-11.9S22.600 3 16 3zm0 21.800c-2 0-3.800-.6-5.400-1.600l-.4-.2-4.600 1.200 1.200-4.400-.3-.4c-1.100-1.700-1.700-3.600-1.700-5.600C4.800 9.500 9.900 5 16 5s11.200 4.500 11.200 10.200S22.100 24.800 16 24.800zm6.200-7.600c-.3-.2-2-1-2.300-1.100-.3-.1-.5-.2-.7.200s-.9 1.100-1.100 1.300c-.2.200-.4.300-.7.100-2-1-3.300-1.800-4.600-4-.3-.6.300-.6 1-1.900.1-.2.100-.4 0-.6l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400-.3.300-1.200 1.200-1.200 2.900s1.200 3.300 1.400 3.500c.2.200 2.400 3.700 5.800 5.100 2.100.9 2.900.9 3.900.8.600-.1 2-.8 2.200-1.600.3-.8.300-1.400.2-1.600-.1-.2-.3-.3-.6-.5z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
